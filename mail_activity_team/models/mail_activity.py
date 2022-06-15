@@ -19,6 +19,8 @@ class MailActivity(models.Model):
             )
         return self.env["mail.activity.team"].search(domain, limit=1)
 
+    user_id = fields.Many2one(required=False)
+
     team_id = fields.Many2one(
         comodel_name="mail.activity.team", default=lambda s: s._get_default_team_id()
     )
@@ -36,7 +38,7 @@ class MailActivity(models.Model):
         if self.team_id and self.user_id in self.team_id.member_ids:
             return res
         self.team_id = self.with_context(
-            default_res_model=self.res_model_id.id
+            default_res_model=self.res_model_id.model
         )._get_default_team_id(user_id=self.user_id.id)
         return res
 
@@ -72,3 +74,12 @@ class MailActivity(models.Model):
             and a.user_id not in a.team_id.with_context(active_test=True).member_ids
         ):
             raise ValidationError(_("The assigned user is not member of the team."))
+
+    @api.onchange("activity_type_id")
+    def _onchange_activity_type_id(self):
+        super(MailActivity, self)._onchange_activity_type_id()
+        if self.activity_type_id.default_team_id:
+            self.team_id = self.activity_type_id.default_team_id
+            members = self.activity_type_id.default_team_id.member_ids
+            if self.user_id not in members and members:
+                self.user_id = members[:1]

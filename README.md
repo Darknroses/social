@@ -1,5 +1,7 @@
-[![Runbot Status](https://runbot.odoo-community.org/runbot/badge/flat/205/13.0.svg)](https://runbot.odoo-community.org/runbot/repo/github-com-oca-social-205)
-[![Build Status](https://travis-ci.com/OCA/social.svg?branch=13.0)](https://travis-ci.com/OCA/social)
+
+[![Runboat](https://img.shields.io/badge/runboat-Try%20me-875A7B.png)](https://runboat.odoo-community.org/builds?repo=OCA/social&target_branch=13.0)
+[![Pre-commit Status](https://github.com/OCA/social/actions/workflows/pre-commit.yml/badge.svg?branch=13.0)](https://github.com/OCA/social/actions/workflows/pre-commit.yml?query=branch%3A13.0)
+[![Build Status](https://github.com/OCA/social/actions/workflows/test.yml/badge.svg?branch=13.0)](https://github.com/OCA/social/actions/workflows/test.yml?query=branch%3A13.0)
 [![codecov](https://codecov.io/gh/OCA/social/branch/13.0/graph/badge.svg)](https://codecov.io/gh/OCA/social)
 [![Translation Status](https://translation.odoo-community.org/widgets/social-13-0/-/svg-badge.svg)](https://translation.odoo-community.org/engage/social-13-0/?utm_source=widget)
 
@@ -22,11 +24,12 @@ addon | version | maintainers | summary
 [base_search_mail_content](base_search_mail_content/) | 13.0.1.0.1 |  | Base Search Mail Content
 [email_template_qweb](email_template_qweb/) | 13.0.1.1.0 |  | Use the QWeb templating mechanism for emails
 [fetchmail_thread_default](fetchmail_thread_default/) | 13.0.1.0.0 |  | Post unkonwn messages to an existing thread
-[mail_activity_board](mail_activity_board/) | 13.0.1.0.1 |  | Add Activity Boards
+[mail_activity_board](mail_activity_board/) | 13.0.1.1.0 |  | Add Activity Boards
 [mail_activity_creator](mail_activity_creator/) | 13.0.1.0.0 |  | Show activities creator
 [mail_activity_done](mail_activity_done/) | 13.0.1.0.1 |  | Mail Activity Done
+[mail_activity_form](mail_activity_form/) | 13.0.1.0.0 |  | Define editable and computed sections in mail activity descriptions
 [mail_activity_partner](mail_activity_partner/) | 13.0.1.0.0 |  | Add Partner to Activities
-[mail_activity_team](mail_activity_team/) | 13.0.1.0.2 |  | Add Teams to Activities
+[mail_activity_team](mail_activity_team/) | 13.0.1.2.1 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 13.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 13.0.1.0.0 |  | Module to use attach existing attachment for account module
 [mail_autosubscribe](mail_autosubscribe/) | 13.0.1.0.0 |  | Automatically subscribe partners to its company's business documents
@@ -42,15 +45,17 @@ addon | version | maintainers | summary
 [mail_partner_opt_out](mail_partner_opt_out/) | 13.0.1.0.0 |  | Add the partner's email to the blackmailed list
 [mail_preview_audio](mail_preview_audio/) | 13.0.1.0.0 |  | Allow to preview audio files
 [mail_preview_base](mail_preview_base/) | 13.0.1.0.1 |  | Base to add more previewing options
-[mail_restrict_follower_selection](mail_restrict_follower_selection/) | 13.0.1.0.2 |  | Define a domain from which followers can be selected
-[mail_tracking](mail_tracking/) | 13.0.1.0.9 |  | Email tracking system for all mails sent
-[mail_tracking_mailgun](mail_tracking_mailgun/) | 13.0.2.0.0 |  | Mail tracking and Mailgun webhooks integration
-[mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 13.0.1.0.0 |  | Improve mass mailing email tracking
+[mail_quoted_reply](mail_quoted_reply/) | 13.0.1.0.0 |  | Make a reply using a message
+[mail_restrict_follower_selection](mail_restrict_follower_selection/) | 13.0.1.1.0 |  | Define a domain from which followers can be selected
+[mail_template_multi_attachment](mail_template_multi_attachment/) | 13.0.1.0.0 |  | Module who allows to generate multi attachments on an email template.
+[mail_tracking](mail_tracking/) | 13.0.1.0.10 |  | Email tracking system for all mails sent
+[mail_tracking_mailgun](mail_tracking_mailgun/) | 13.0.2.0.1 |  | Mail tracking and Mailgun webhooks integration
+[mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 13.0.1.0.1 |  | Improve mass mailing email tracking
 [mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 13.0.2.0.0 |  | Know and track (un)subscription reasons, GDPR compliant
 [mass_mailing_custom_unsubscribe_event](mass_mailing_custom_unsubscribe_event/) | 13.0.1.0.0 |  | Allow to unsubscribe discretely from an event
 [mass_mailing_event_registration_exclude](mass_mailing_event_registration_exclude/) | 13.0.1.0.0 |  | Link mass mailing with event for excluding recipients
 [mass_mailing_list_dynamic](mass_mailing_list_dynamic/) | 13.0.1.0.1 |  | Mass mailing lists that get autopopulated
-[mass_mailing_partner](mass_mailing_partner/) | 13.0.1.1.1 |  | Link partners with mass-mailing
+[mass_mailing_partner](mass_mailing_partner/) | 13.0.1.1.2 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 13.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
 
 [//]: # (end addons)
@@ -61,12 +66,11 @@ addon | version | maintainers | summary
 
 This repository is licensed under [AGPL-3.0](LICENSE).
 
-However, each module can have a totally different license, as long as they adhere to OCA
+However, each module can have a totally different license, as long as they adhere to Odoo Community Association (OCA)
 policy. Consult each module's `__manifest__.py` file, which contains a `license` key
 that explains its license.
 
 ----
-
 OCA, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit
 organization whose mission is to support the collaborative development of Odoo features
 and promote its widespread use.
