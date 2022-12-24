@@ -25,17 +25,19 @@ addon | version | maintainers | summary
 [email_template_qweb](email_template_qweb/) | 14.0.1.0.1 |  | Use the QWeb templating mechanism for emails
 [mail_activity_board](mail_activity_board/) | 14.0.1.1.0 |  | Add Activity Boards
 [mail_activity_creator](mail_activity_creator/) | 14.0.1.0.0 |  | Show activities creator
-[mail_activity_done](mail_activity_done/) | 14.0.1.0.1 |  | Mail Activity Done
+[mail_activity_done](mail_activity_done/) | 14.0.1.0.2 |  | Mail Activity Done
 [mail_activity_partner](mail_activity_partner/) | 14.0.1.0.0 |  | Add Partner to Activities
-[mail_activity_team](mail_activity_team/) | 14.0.1.1.0 |  | Add Teams to Activities
+[mail_activity_team](mail_activity_team/) | 14.0.1.2.0 |  | Add Teams to Activities
 [mail_allow_portal_internal_note](mail_allow_portal_internal_note/) | 14.0.1.0.2 |  | Portal users can access internal messages related to own or other companies
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 14.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 14.0.1.0.1 |  | Module to use attach existing attachment for account module
 [mail_autosubscribe](mail_autosubscribe/) | 14.0.1.0.0 |  | Automatically subscribe partners to its company's business documents
-[mail_debrand](mail_debrand/) | 14.0.2.2.1 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
+[mail_chatter_thread_colour](mail_chatter_thread_colour/) | 14.0.1.0.0 |  | Allow to change the colour of threads
+[mail_debrand](mail_debrand/) | 14.0.2.2.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_drop_target](mail_drop_target/) | 14.0.1.0.1 |  | Attach emails to Odoo by dragging them from your desktop
 [mail_filter_adressee_by_contact](mail_filter_adressee_by_contact/) | 14.0.1.1.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Adresses filter by partner contacts and users
 [mail_full_expand](mail_full_expand/) | 14.0.1.0.0 |  | Expand mail in a big window
+[mail_improved_tracking_value](mail_improved_tracking_value/) | 14.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
 [mail_inline_css](mail_inline_css/) | 14.0.1.0.0 |  | Convert style tags in inline style in your mails
 [mail_layout_force](mail_layout_force/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 14.0.1.0.1 |  | Preview email templates in the browser
@@ -62,8 +64,9 @@ addon | version | maintainers | summary
 [mass_mailing_partner](mass_mailing_partner/) | 14.0.1.1.0 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 14.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
 [mass_mailing_subscription_date](mass_mailing_subscription_date/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Track contact's subscription date to mailing lists
-[mass_mailing_subscription_email](mass_mailing_subscription_email/) | 14.0.1.0.2 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Send notification emails when contacts subscription changes.
+[mass_mailing_subscription_email](mass_mailing_subscription_email/) | 14.0.1.0.3 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Send notification emails when contacts subscription changes.
 [mass_mailing_unique](mass_mailing_unique/) | 14.0.1.0.0 |  | Avoids duplicate mailing lists and contacts
+[microsoft_outlook_single_tenant](microsoft_outlook_single_tenant/) | 14.0.1.0.0 |  | Microsoft Outlook Single Tenant
 [website_mass_mailing_name](website_mass_mailing_name/) | 14.0.1.0.0 |  | Ask for name when subscribing, and create and/or link partner
 
 [//]: # (end addons)
