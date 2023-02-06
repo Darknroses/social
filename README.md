@@ -34,7 +34,7 @@ addon | version | maintainers | summary
 [mail_autosubscribe](mail_autosubscribe/) | 14.0.1.0.0 |  | Automatically subscribe partners to its company's business documents
 [mail_chatter_thread_colour](mail_chatter_thread_colour/) | 14.0.1.0.0 |  | Allow to change the colour of threads
 [mail_debrand](mail_debrand/) | 14.0.2.2.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
-[mail_drop_target](mail_drop_target/) | 14.0.1.0.1 |  | Attach emails to Odoo by dragging them from your desktop
+[mail_drop_target](mail_drop_target/) | 14.0.1.0.2 |  | Attach emails to Odoo by dragging them from your desktop
 [mail_filter_adressee_by_contact](mail_filter_adressee_by_contact/) | 14.0.1.1.0 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Adresses filter by partner contacts and users
 [mail_full_expand](mail_full_expand/) | 14.0.1.0.0 |  | Expand mail in a big window
 [mail_improved_tracking_value](mail_improved_tracking_value/) | 14.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
@@ -42,6 +42,7 @@ addon | version | maintainers | summary
 [mail_layout_force](mail_layout_force/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 14.0.1.0.1 |  | Preview email templates in the browser
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 14.0.1.0.0 | [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Apply a custom subject to mail notifications
+[mail_notification_with_history](mail_notification_with_history/) | 14.0.1.0.0 | [![TDu](https://github.com/TDu.png?size=30px)](https://github.com/TDu) | Add the previous chatter discussion into new email notifications.
 [mail_optional_autofollow](mail_optional_autofollow/) | 14.0.1.0.1 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 14.0.1.0.0 |  | Choose to notify followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 14.0.2.0.0 |  | Allows you to configure the from header for a mail server.
@@ -52,10 +53,11 @@ addon | version | maintainers | summary
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 14.0.1.0.0 |  | Define a domain from which followers can be selected
 [mail_restrict_send_button](mail_restrict_send_button/) | 14.0.1.1.0 |  | Security for Send Message Button on Chatter Area
 [mail_send_copy](mail_send_copy/) | 14.0.1.0.1 |  | Send to you a copy of each mail sent by Odoo
+[mail_server_by_user](mail_server_by_user/) | 14.0.1.0.0 | [![ChrisOForgeFlow](https://github.com/ChrisOForgeFlow.png?size=30px)](https://github.com/ChrisOForgeFlow) | Email Server By User
 [mail_show_follower](mail_show_follower/) | 14.0.1.1.0 |  | Show CC document followers in mails.
-[mail_tracking](mail_tracking/) | 14.0.2.0.3 |  | Email tracking system for all mails sent
-[mail_tracking_mailgun](mail_tracking_mailgun/) | 14.0.2.0.0 |  | Mail tracking and Mailgun webhooks integration
-[mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 14.0.1.0.1 |  | Improve mass mailing email tracking
+[mail_tracking](mail_tracking/) | 14.0.3.0.0 |  | Email tracking system for all mails sent
+[mail_tracking_mailgun](mail_tracking_mailgun/) | 14.0.2.1.0 |  | Mail tracking and Mailgun webhooks integration
+[mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 14.0.1.1.0 |  | Improve mass mailing email tracking
 [mass_mailing_company_newsletter](mass_mailing_company_newsletter/) | 14.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Easily manage partner's subscriptions to your main mailing list.
 [mass_mailing_contact_partner](mass_mailing_contact_partner/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Links mailing.contacts with res.partners.
 [mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 14.0.1.0.0 |  | Know and track (un)subscription reasons, GDPR compliant
@@ -66,7 +68,7 @@ addon | version | maintainers | summary
 [mass_mailing_subscription_date](mass_mailing_subscription_date/) | 14.0.1.0.0 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Track contact's subscription date to mailing lists
 [mass_mailing_subscription_email](mass_mailing_subscription_email/) | 14.0.1.0.3 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Send notification emails when contacts subscription changes.
 [mass_mailing_unique](mass_mailing_unique/) | 14.0.1.0.0 |  | Avoids duplicate mailing lists and contacts
-[microsoft_outlook_single_tenant](microsoft_outlook_single_tenant/) | 14.0.1.0.0 |  | Microsoft Outlook Single Tenant
+[microsoft_outlook_single_tenant](microsoft_outlook_single_tenant/) | 14.0.2.0.0 |  | Microsoft Outlook Single Tenant (DEPRECATED)
 [website_mass_mailing_name](website_mass_mailing_name/) | 14.0.1.0.0 |  | Ask for name when subscribing, and create and/or link partner
 
 [//]: # (end addons)
