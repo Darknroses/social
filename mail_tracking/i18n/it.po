@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-12-01 02:19+0000\n"
-"PO-Revision-Date: 2023-01-03 12:46+0000\n"
+"PO-Revision-Date: 2023-04-07 18:25+0000\n"
 "Last-Translator: Francesco Foresti <francesco.foresti@ooops404.com>\n"
 "Language-Team: Italian (https://www.transifex.com/oca/teams/23907/it/)\n"
 "Language: it\n"
@@ -105,6 +105,16 @@ msgid "Clicked URL"
 msgstr ""
 
 #. module: mail_tracking
+#: model:ir.model,name:mail_tracking.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: mail_tracking
+#: model:ir.model,name:mail_tracking.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: mail_tracking
 #. openerp-web
 #: code:addons/mail_tracking/static/src/js/failed_message/discuss.js:0
 #, python-format
@@ -174,9 +184,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_resend_message__display_name
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_thread__display_name
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__display_name
+#: model:ir.model.fields,field_description:mail_tracking.field_res_company__display_name
+#: model:ir.model.fields,field_description:mail_tracking.field_res_config_settings__display_name
 #: model:ir.model.fields,field_description:mail_tracking.field_res_partner__display_name
 msgid "Display Name"
-msgstr "Nome da visualizzare"
+msgstr "Nome visualizzato"
 
 #. module: mail_tracking
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__display_name
@@ -348,6 +360,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_thread__id
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email__id
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event__id
+#: model:ir.model.fields,field_description:mail_tracking.field_res_company__id
+#: model:ir.model.fields,field_description:mail_tracking.field_res_config_settings__id
 #: model:ir.model.fields,field_description:mail_tracking.field_res_partner__id
 msgid "ID"
 msgstr "ID"
@@ -379,6 +393,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_thread____last_update
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_email____last_update
 #: model:ir.model.fields,field_description:mail_tracking.field_mail_tracking_event____last_update
+#: model:ir.model.fields,field_description:mail_tracking.field_res_company____last_update
+#: model:ir.model.fields,field_description:mail_tracking.field_res_config_settings____last_update
 #: model:ir.model.fields,field_description:mail_tracking.field_res_partner____last_update
 msgid "Last Modified on"
 msgstr "Ultima modifica il"
@@ -583,7 +599,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mail_tracking.view_mail_tracking_event_search
 #, python-format
 msgid "Sent"
-msgstr "Invia"
+msgstr "Inviato"
 
 #. module: mail_tracking
 #. openerp-web
@@ -592,6 +608,13 @@ msgstr "Invia"
 #: code:addons/mail_tracking/static/src/xml/failed_message/thread.xml:0
 #, python-format
 msgid "Set as Reviewed"
+msgstr ""
+
+#. module: mail_tracking
+#: model:ir.model.fields,field_description:mail_tracking.field_res_company__mail_tracking_show_aliases
+#: model:ir.model.fields,field_description:mail_tracking.field_res_config_settings__mail_tracking_show_aliases
+#: model_terms:ir.ui.view,arch_db:mail_tracking.res_config_settings_view_form
+msgid "Show Aliases in Mail Tracking"
 msgstr ""
 
 #. module: mail_tracking
